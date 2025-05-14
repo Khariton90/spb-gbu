@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,700);
+
+@font-face {
+	font-family: 'Vela';
+	src: url('./assets/VelaSans-Regular.woff');
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: 'Vela', sans-serif;
+	font-size: 14px;
+}
+
+:root {
+	--blue-color: #314b99;
+	--blue-color-secondary: #134ec1;
+	--light-blue-color: #d6dbeb;
+	--orange-color: #f89b11;
+	--green-color: #59bba6;
+	--black-color: #16191d;
+	--border-color: #dde2e4;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.container {
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.dialog {
+	width: 400px;
+	padding: 40px;
+	border: 1px solid var(--border-color);
+	border-radius: 6px;
+	box-shadow: 0 25px 50px var(--border-color);
+
+	&::backdrop {
+		backdrop-filter: blur(2px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+}
